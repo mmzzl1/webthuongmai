@@ -1,0 +1,4 @@
+navbar-inverse: Brg đen
+nav navbar-nav: Ul menu
+active: trang đang hoạt động
+caret: tạo mũi tên quay xuống khi hiển thị
