@@ -4,217 +4,600 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Web Thương Mại</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/fontawesome-pro-5.0/css/all.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/product_list.js"></script>
 
 </head>
-	
+
 <body>
 	<!-- header start -->
 	<header>
-		<div class="bgrhd">
-			<div class="container ">
-				<nav>
-					<div class="row" >
-						<div class="col-xs-5 col-sm-5 col-lg-5">
-							<ul class="nav navbar-nav">
-								<li><a href="#" class="active">Home</a></li>
-								<li><a href="#">Contact us</a></li>
-								<li><a href="#">Blog</a></li>
-								<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">bnous PAGE <span class="caret"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="#">Faqs</a></li>
-										<li><a href="#">Page 404</a></li>
-										<li><a href="#">Service</a></li>
-										<li><a href="#">Shipping & Returns</a></li>
-										<li><a href="#">Support 24/7 Page</a></li>
-									</ul>
-								</li>
-								<li><a href="#">RSS syndication</a></li>
-							</ul>
-						</div>
-						<div class="col-xs-4 col-sm-4 col-lg-4 text-right">
-							<div class="item1">
-								<a href="#">Get an extra 10% off on select hotels with Member Pricing. Join now!</a>
-							</div>
-							<div class="item2">
-								<a href="#">Free 3 day delirery and free returns within the US</a>
-							</div>
-						</div>
-						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-							<ul class="nav navbar-nav pull-right leftmenu">
-								<li><a href="#">Compare</a></li>
-								<li><a href="#"><i class="glyphicon glyphicon-gift"></i> Gift Certificates</a></li>
-							</ul>
-						</div>
-					</div>
-				</nav>
-			</div>
-		</div>
-		<!-- 1/2header -->
-		<div class="bgrbanner">
-			<div class="container">
-				<div class="row"><!-- logo -->
-					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-						<div class="logo">
-							<img src="assets/images/logo.png" alt="logo" class="img-responsive">
-						</div>	
-					</div>
-					<!-- endlogo -->
-					<!-- seach -->
-					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 timkiem">
-						<div class="input-group">
-							<input type="text" class="form-control" placeholder="Search the store">
-							<div class="input-group-btn">
-								<button class="btn btn-danger" type="button">
-									<i class="glyphicon glyphicon-search"></i>
-								</button>
-							</div>
-						</div>
-					</div>
-					<!-- endseach -->
-					<!-- giohang -->
-					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 hoadon">
-						<div class="giohang">
-							<a href="#">
-								<img src="assets/images/shopping-cart.png">
-								<span>My Cart -</span>
-								<p> 0 item</p>
-							</a>	
-						</div>
-					</div>
-					<!-- endgiohang -->
-					<!-- dangnhap -->
-					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-						<div class="dropdown">
-							<button class="btn dropdown-toggle login" type="button" data-toggle="dropdown">Login / Register
-								<span class="caret"></span></button>
-								<ul class="dropdown-menu">
-									<li><a href="#">Check Out</a></li>
-									<li><a href="#">Singin</a></li>
-									<li><a href="#">Register</a></li>
-								</ul>
-							</div>
-						</div>
-					</div><!-- enddangnhap -->
-				</div>
-			</div>
-		</header>
+		<script type="text/javascript">
+			$('header').load('header.html');
+		</script>
+	</header>
 	<!-- headerend -->
-	<!-- footer -->
-	<footer>
-		<!-- service -->
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">	
-					<div id="footer">
-						<div class="dichvu"><i class="fa fa-lock"></i>
-							<h5 class="banners-tittle">100% Secure Payments</h5>
-							<p class="banners-text">All major credit & debit
-								<br>
-								cards accepted
-							</p> 
+
+
+	<!-- danhmucsanpham -->
+	<div class="container">
+		<div class="row body_1">
+			<!-- danhmuctrai -->
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 sanpham">
+				<h5 class="categories">all categories</h5>
+				<ul class="listsp">
+					<li><a href="#"><img src="assets/images/sun.png" class="icon" alt=""> Hot Deal</a></li>
+					<li><a href="#">ElecTronic</a></li>
+					<li><a href="#">Travel & Vacation</a></li>
+					<li><a href="#">Fashion & Accessories</a></li>
+					<li><a href="#">Watches</a></li>
+					<li><a href="#">SmartPhone</a></li>
+					<li><a href="#">Health & Beauty</a></li>
+					<li><a href="#">Sport Clothing</a></li>
+				</ul>
+			</div>
+			<!-- endanhmuctrai -->
+			<!-- slideanhgiu -->
+			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/product_images/theme_images/sample-9.jpg?t=1533509248" alt="Los Angeles">
 						</div>
-						<div  class="dichvu"><img src="assets/images/help-operator.png">
-							<h5 class="banners-tittle">Help Center</h5>
-							<p class="banners-text">Got a question? Look no further.
-								<br>
-								Browse our FAQs or submit your here.
-							</p> 
+
+						<div class="item">
+							<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/product_images/theme_images/sample-7.jpg?t=1533509248" alt="Chicago">
 						</div>
-						<div class="dichvu"><img src="assets/images/shield.png">
-							<h5 class="banners-tittle">TrustPay</h5>
-							<p class="banners-text">100% Payment Protection. 
-								<br>
-								Easy  Return Policy 
-							</p> 
+
+						<div class="item">
+							<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/product_images/theme_images/sample-8.jpg?t=1533509248" alt="New York">
 						</div>
-						<div class="dichvu"><i class="fa fa-truck"></i>
-							<h5 class="banners-tittle">Worldwide Delivery</h5>
-							<p class="banners-text">With sites in 5 languages, we ship to over 
-								<br>
-								200 countries & regions.
-							</p> 
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+			<!-- endslideanhgiua -->
+			<!-- slidephai -->
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 body_3">
+				<div id="my1Carousel" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#my1Carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#my1Carousel" data-slide-to="1"></li>
+						<li data-target="#my1Carousel" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/270x270/products/80/406/21__62912.1532767228.png?c=2" alt="Chania">
+							<div class="carousel-caption">
+								<h3>Los Angeles</h3>
+								<p>LA is always so much fun!</p>
+							</div>
 						</div>
-						<div class="dichvu"><img src="assets/images/money-bag-with-dollar-symbol.png">
-							<h5 class="banners-tittle">Great Value</h5>
-							<p class="banners-text">We offer competitive prices on our 
-								<br>
-								100 million plus product range.
-							</p> 
+
+						<div class="item">
+							<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/270x270/products/107/457/25__27085.1533136397.png?c=2" alt="Chicago">
+							<div class="carousel-caption">
+								<h3>Chicago</h3>
+								<p>Thank you, Chicago!</p>
+							</div>
+						</div>
+
+						<div class="item">
+							<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/270x270/products/103/434/2__51849.1532767852.jpg?c=2" alt="New York">
+							<div class="carousel-caption">
+								<h3>New York</h3>
+								<p>We love the Big Apple!</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#my1Carousel" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#my1Carousel" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+			<!-- endslidephai -->
+			<!-- 5dichvu -->
+			<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 pull-right">
+				<div id="noibat">
+					<div style="background-color:coral;" class="noibat">
+						<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/content/site/banner/home1/cate-2.jpg" alt="dichvu1">
+						<div class="textbody">
+							<h5 class="text">SPA & MASSAGE</h5>
+						</div>
+					</div>
+					<div style="background-color:lightblue; "class="noibat">
+						<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/content/site/banner/home1/cate-4.jpg" alt="dichvu1">
+						<div class="textbody">
+							<h5 class="text">Health Care</h5>
+						</div>
+					</div>
+					<div style="background-color:khaki;" class="noibat">
+						<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/content/site/banner/home1/cate-5.jpg" alt="dichvu1">
+						<div class="textbody">
+							<h5 class="text">Fashion</h5>
+						</div>
+					</div>
+					<div style="background-color:pink;" class="noibat">
+						<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/content/site/banner/home1/cate-1.jpg" alt="dichvu1">
+						<div class="textbody">
+							<h5 class="text">Watches</h5>
+						</div>
+					</div>
+					<div style="background-color:lightgrey;" class="noibat">
+						<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/content/site/banner/home1/cate-6.jpg" alt="dichvu1">
+						<div class="textbody">
+							<h5 class="text">Travel</h5>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div><!-- endservice -->
-		<hr>
-		<!-- finalfooter -->
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-					<h5 class="finalfooter">Contact Us</h5>
-					<address>Addresses :  No 304, Sky Tower, New York, USA</address>
-					<address>Call us now :  Call us at 1234 5678 90</address>
-					<address>Email: <a href="#">truongtuhuy2@gmail.com</a></address>
+			<!-- end5dichvu -->
+			<!-- bannersaleoff75% -->
+			<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 pull-right body_4">
+				<a href="#"><img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/content/site/banner/home1/banner21.jpg" alt="banner" class="img"></a>
+			</div>
+			<!-- endbannersaleoff75% -->
+			<!-- danhmucsanpham01 -->
+			<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 body_5 pull-right">
+				<div class="body5-tittle">
+					<h4 class="body5-text"> Fashion & Accessories</h4>
 				</div>
-				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-					<h5 class="finalfooter">Our Shops</h5>
-					<ul class="finalfooter-list">
-						<li><a href="#">Product Support</a></li>
-						<li><a href="#">PC Setup & Support</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Term & Conditions</a></li>
-						<li><a href="#">Privacy Policy</a></li>
-					</ul>
+				<div class="bgrbody5">
+					<div class="row">
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 danhmucsp">
+							<div class="line1">
+								<div class="sp1"><a href="#"><img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/60x60/q/94__98383.original.jpg" alt="sp1"></a>
+									<p class="titletsp">Accessories</p>
+								</div>
+								<div class="sp1"><a href="#"><img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/60x60/y/116__23773.original.jpg" alt="sp2"></a>
+									<p class="titletsp">Bags</p>
+								</div>
+							</div>
+							<div class="line1">
+								<div class="sp1"><a href="#"><img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/60x60/e/23__07855.original.jpg" alt="sp1"></a>
+									<p class="titletsp">Dress Ladies</p>
+								</div>
+								<div class="sp1"><a href="#"><img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/60x60/y/116__23773.original.jpg" alt="sp2"></a>
+									<p class="titletsp">Kitchen</p>
+								</div>
+							</div>
+							<div class="line1">
+								<div class="sp1"><a href="#"><img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/60x60/q/22__36633.original.png" alt="sp1"></a>
+									<p class="titletsp">T-shirt</p>
+								</div>
+								<div class="sp1"><a href="#"><img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/60x60/y/116__23773.original.jpg" alt="sp2"></a>
+									<p class="titletsp">Jewelry</p>
+								</div>
+							</div>
+							<div class="line1">
+								<div class="sp1"><a href="#"><img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/60x60/i/9__17292.original.png" alt="sp1"></a>
+									<p class="titletsp">Women Fashion</p>
+								</div>
+								<div class="sp1"><a href="#"><img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/60x60/n/24__89607.original.png" alt="sp2"></a>
+									<p class="titletsp">Jean</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 body_6">
+							<div class="line2">
+								<div class="text-sp">
+									<a href="#"><h4>Est Officia Including Shoes Beautiful</h4></a>
+									<p>Common Good</p>
+									<p>
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+									</p>
+									<div class="price">
+										<h2>$250.00</h2>
+									</div>
+									<div class="addtocart">
+										<button type="button" class="btn btn-success">Add to cart </button>
+									</div>
+								</div>
+								<div class="anhsp">
+									<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/270x270/products/120/393/36__99662.1532765748.png?c=2" alt="">
+								</div>
+							</div>
+							<div class="line2">
+								<div class="text-sp">
+									<a href="#"><h4>Est Officia Including Shoes Beautiful</h4></a>
+									<p>Common Good</p>
+									<p>
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+									</p>
+									<div class="price">
+										<h2>$250.00</h2>
+									</div>
+									<div class="addtocart">
+										<button type="button" class="btn btn-success">Add to cart </button>
+									</div>
+								</div>
+								<div class="anhsp">
+									<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/270x270/products/120/393/36__99662.1532765748.png?c=2" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 body_6">
+							<div class="line2">
+								<div class="text-sp">
+									<a href="#"><h4>Est Officia Including Shoes Beautiful</h4></a>
+									<p>Common Good</p>
+									<p>
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+									</p>
+									<div class="price">
+										<h2>$250.00</h2>
+									</div>
+									<div class="addtocart">
+										<button type="button" class="btn btn-success">Add to cart </button>
+									</div>
+								</div>
+								<div class="anhsp">
+									<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/270x270/products/120/393/36__99662.1532765748.png?c=2" alt="">
+								</div>
+							</div>
+							<div class="line2">
+								<div class="text-sp">
+									<a href="#"><h4>Est Officia Including Shoes Beautiful</h4></a>
+									<p>Common Good</p>
+									<p>
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+									</p>
+									<div class="price">
+										<h2>$250.00</h2>
+									</div>
+									<div class="addtocart">
+										<button type="button" class="btn btn-success">Add to cart </button>
+									</div>
+								</div>
+								<div class="anhsp">
+									<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/270x270/products/120/393/36__99662.1532765748.png?c=2" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-					<h5 class="finalfooter">Information</h5>
-					<ul class="finalfooter-list">
-						<li><a href="#">Contact Us</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Bonus page</a></li>
-						<li><a href="#">RSS Syndication</a></li>
-						<li><a href="#">Sitemap</a></li>
-					</ul>
+			</div>
+			<!-- enddanhmucsanpham01 -->
+			<!-- danhmucsanpham02 -->
+			<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 body_5 pull-right">
+				<div class="body5-tittle">
+					<h4 class="body5-text"> Fashion & Accessories</h4>
 				</div>
-				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-					<h5 class="finalfooter">Brands</h5>
-					<ul class="finalfooter-list">
-						<li><a href="#">OFS</a></li>
-						<li><a href="#">Sagaform</a></li>
-						<li><a href="#">Common Good</a></li>
-						<li><a href="#">Sample Ordered</a></li>
-						<li><a href="#">View All</a></li>
-					</ul>
+				<div class="bgrbody5">
+					<div class="row">
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 danhmucsp">
+							<div class="line1">
+								<div class="sp1"><a href="#"><img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/60x60/q/94__98383.original.jpg" alt="sp1"></a>
+									<p class="titletsp">Accessories</p>
+								</div>
+								<div class="sp1"><a href="#"><img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/60x60/y/116__23773.original.jpg" alt="sp2"></a>
+									<p class="titletsp">Bags</p>
+								</div>
+							</div>
+							<div class="line1">
+								<div class="sp1"><a href="#"><img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/60x60/e/23__07855.original.jpg" alt="sp1"></a>
+									<p class="titletsp">Dress Ladies</p>
+								</div>
+								<div class="sp1"><a href="#"><img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/60x60/y/116__23773.original.jpg" alt="sp2"></a>
+									<p class="titletsp">Kitchen</p>
+								</div>
+							</div>
+							<div class="line1">
+								<div class="sp1"><a href="#"><img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/60x60/q/22__36633.original.png" alt="sp1"></a>
+									<p class="titletsp">T-shirt</p>
+								</div>
+								<div class="sp1"><a href="#"><img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/60x60/y/116__23773.original.jpg" alt="sp2"></a>
+									<p class="titletsp">Jewelry</p>
+								</div>
+							</div>
+							<div class="line1">
+								<div class="sp1"><a href="#"><img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/60x60/i/9__17292.original.png" alt="sp1"></a>
+									<p class="titletsp">Women Fashion</p>
+								</div>
+								<div class="sp1"><a href="#"><img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/60x60/n/24__89607.original.png" alt="sp2"></a>
+									<p class="titletsp">Jean</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 body_6">
+							<div class="line2">
+								<div class="text-sp">
+									<a href="#"><h4>Est Officia Including Shoes Beautiful</h4></a>
+									<p>Common Good</p>
+									<p>
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+									</p>
+									<div class="price">
+										<h2>$250.00</h2>
+									</div>
+									<div class="addtocart">
+										<button type="button" class="btn btn-success">Add to cart </button>
+									</div>
+								</div>
+								<div class="anhsp">
+									<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/270x270/products/120/393/36__99662.1532765748.png?c=2" alt="">
+								</div>
+							</div>
+							<div class="line2">
+								<div class="text-sp">
+									<a href="#"><h4>Est Officia Including Shoes Beautiful</h4></a>
+									<p>Common Good</p>
+									<p>
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+									</p>
+									<div class="price">
+										<h2>$250.00</h2>
+									</div>
+									<div class="addtocart">
+										<button type="button" class="btn btn-success">Add to cart </button>
+									</div>
+								</div>
+								<div class="anhsp">
+									<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/270x270/products/120/393/36__99662.1532765748.png?c=2" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 body_6">
+							<div class="line2">
+								<div class="text-sp">
+									<a href="#"><h4>Est Officia Including Shoes Beautiful</h4></a>
+									<p>Common Good</p>
+									<p>
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+									</p>
+									<div class="price">
+										<h2>$250.00</h2>
+									</div>
+									<div class="addtocart">
+										<button type="button" class="btn btn-success">Add to cart </button>
+									</div>
+								</div>
+								<div class="anhsp">
+									<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/270x270/products/120/393/36__99662.1532765748.png?c=2" alt="">
+								</div>
+							</div>
+							<div class="line2">
+								<div class="text-sp">
+									<a href="#"><h4>Est Officia Including Shoes Beautiful</h4></a>
+									<p>Common Good</p>
+									<p>
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+										<img src="assets/images/star.png" alt="">
+									</p>
+									<div class="price">
+										<h2>$250.00</h2>
+									</div>
+									<div class="addtocart">
+										<button type="button" class="btn btn-success">Add to cart </button>
+									</div>
+								</div>
+								<div class="anhsp">
+									<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/270x270/products/120/393/36__99662.1532765748.png?c=2" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-					<h5 class="finalfooter">All Categories</h5>
-					<ul class="finalfooter-list">
-						<li><a href="#">Hot Deal</a></li>
-						<li><a href="#">Electronics</a></li>
-						<li><a href="#">Travel & Vacation</a></li>
-						<li><a href="#">Fashion & Accessories</a></li>
-						<li><a href="#">Watches</a></li>
-					</ul>
+			</div>
+			<!-- enddanhmucsanpham02 -->
+			<!-- 3banner -->
+			<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 pull-right body_7">
+				<div class="dacsac">
+					<div>
+						<a href="#">
+							<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/content/site/banner/home1/banner22.jpg" alt="dacsac">
+						</a>
+					</div>
+					<div>
+						<a href="#">
+							<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/content/site/banner/home1/banner23.jpg" alt="dacsac">
+						</a>
+					</div>
+					<div>
+						<a href="#">
+							<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/content/site/banner/home1/banner24.jpg" alt="dacsac">
+						</a>
+					</div>
 				</div>
-				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-					<h5 class="finalfooter">Instagram Gallery</h5>
+			</div>
+			<!-- end 3 banner -->
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 body_8">
+			<div class="body5-tittle">
+				<h4 class="body5-text">Electronic</h4>
+			</div>
+			<!-- .sanphamelt -->
+			<div class="sanphamelt">
+				<div class="sanphamelt01">
+					<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/270x270/products/121/466/5__33931.1533482461.png?c=2" alt="sanphamelt">
+					<a href="#">Magnetic Air Vent Phone Holder for iPhone 7 / 7 Plus</a>
+					<p>Sample Ordered</p>
+					<div class="price">
+						<h2>$250.00</h2>
+					</div>
+					<div class="addtocart">
+						<button type="button" class="btn btn-success">Add to cart </button>
+					</div>
+				</div>
+				<div class="sanphamelt01">
+					<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/270x270/products/121/466/5__33931.1533482461.png?c=2" alt="sanphamelt">
+					<a href="#">Magnetic Air Vent Phone Holder for iPhone 7 / 7 Plus</a>
+					<p>Sample Ordered</p>
+					<div class="price">
+						<h2>$250.00</h2>
+					</div>
+					<div class="addtocart">
+						<button type="button" class="btn btn-success">Add to cart </button>
+					</div>
+				</div>
+				<div class="sanphamelt01">
+					<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/270x270/products/121/466/5__33931.1533482461.png?c=2" alt="sanphamelt">
+					<a href="#">Magnetic Air Vent Phone Holder for iPhone 7 / 7 Plus</a>
+					<p>Sample Ordered</p>
+					<div class="price">
+						<h2>$250.00</h2>
+					</div>
+					<div class="addtocart">
+						<button type="button" class="btn btn-success">Add to cart </button>
+					</div>
+				</div>
+				<div class="sanphamelt01">
+					<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/270x270/products/121/466/5__33931.1533482461.png?c=2" alt="sanphamelt">
+					<a href="#">Magnetic Air Vent Phone Holder for iPhone 7 / 7 Plus</a>
+					<p>Sample Ordered</p>
+					<div class="price">
+						<h2>$250.00</h2>
+					</div>
+					<div class="addtocart">
+						<button type="button" class="btn btn-success">Add to cart </button>
+					</div>
+				</div>
+				<div class="sanphamelt01">
+					<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/270x270/products/121/466/5__33931.1533482461.png?c=2" alt="sanphamelt">
+					<a href="#">Magnetic Air Vent Phone Holder for iPhone 7 / 7 Plus</a>
+					<p>Sample Ordered</p>
+					<div class="price">
+						<h2>$250.00</h2>
+					</div>
+					<div class="addtocart">
+						<button type="button" class="btn btn-success">Add to cart </button>
+					</div>
 				</div>
 			</div>
 		</div>
-	<div class="bgrhd">
-		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 copyright">
-				<h5>&#169; Copyright 2018 Powered by Truong Tu Huy</h5>
+		<!-- hang2 -->
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 body_8">
+			<!-- .sanphamelt -->
+			<div class="sanphamelt">
+				<div class="sanphamelt01">
+					<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/270x270/products/121/466/5__33931.1533482461.png?c=2" alt="sanphamelt">
+					<a href="#">Magnetic Air Vent Phone Holder for iPhone 7 / 7 Plus</a>
+					<p>Sample Ordered</p>
+					<div class="price">
+						<h2>$250.00</h2>
+					</div>
+					<div class="addtocart">
+						<button type="button" class="btn btn-success">Add to cart </button>
+					</div>
+				</div>
+				<div class="sanphamelt01">
+					<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/270x270/products/121/466/5__33931.1533482461.png?c=2" alt="sanphamelt">
+					<a href="#">Magnetic Air Vent Phone Holder for iPhone 7 / 7 Plus</a>
+					<p>Sample Ordered</p>
+					<div class="price">
+						<h2>$250.00</h2>
+					</div>
+					<div class="addtocart">
+						<button type="button" class="btn btn-success">Add to cart </button>
+					</div>
+				</div>
+				<div class="sanphamelt01">
+					<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/270x270/products/121/466/5__33931.1533482461.png?c=2" alt="sanphamelt">
+					<a href="#">Magnetic Air Vent Phone Holder for iPhone 7 / 7 Plus</a>
+					<p>Sample Ordered</p>
+					<div class="price">
+						<h2>$250.00</h2>
+					</div>
+					<div class="addtocart">
+						<button type="button" class="btn btn-success">Add to cart </button>
+					</div>
+				</div>
+				<div class="sanphamelt01">
+					<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/270x270/products/121/466/5__33931.1533482461.png?c=2" alt="sanphamelt">
+					<a href="#">Magnetic Air Vent Phone Holder for iPhone 7 / 7 Plus</a>
+					<p>Sample Ordered</p>
+					<div class="price">
+						<h2>$250.00</h2>
+					</div>
+					<div class="addtocart">
+						<button type="button" class="btn btn-success">Add to cart </button>
+					</div>
+				</div>
+				<div class="sanphamelt01">
+					<img src="https://cdn11.bigcommerce.com/s-dqqn20oe0e/images/stencil/270x270/products/121/466/5__33931.1533482461.png?c=2" alt="sanphamelt">
+					<a href="#">Magnetic Air Vent Phone Holder for iPhone 7 / 7 Plus</a>
+					<p>Sample Ordered</p>
+					<div class="price">
+						<h2>$250.00</h2>
+					</div>
+					<div class="addtocart">
+						<button type="button" class="btn btn-success">Add to cart </button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
+	<!-- footer -->
+	<hr>
+	<footer>
+		<script type="text/javascript">
+			$('footer').load('footer.html');
+		</script>
 	</footer><!-- endfooter -->
 </body>
 </html>
