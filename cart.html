@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Cart Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/fontawesome-pro-5.0/css/all.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="product_list.js"></script>
+	<script src="assets/js/main.js"></script>
+</head>
+<body>
+	<!-- header start -->
+	<header>
+		<script type="text/javascript">
+			$('header').load('header.html');
+		</script>
+	</header>
+	<!-- headerend -->
+	<div class="container">
+		<h4 class="">
+			Your Cart (<span class="giohang-num"></span>)
+		</h4>
+		<table id="cart-items" class="table">
+			<thead class="cart-header">
+				<tr>
+					<th class="cart-header-item">Item</th>
+					<th class="cart-header-item">Name</th>
+					<th class="cart-header-item">Price</th>
+					<th class="cart-header-item cart-header-quantity">Quantity</th>
+					<th class="cart-header-item">Total</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</div>
+	<footer>
+		<script type="text/javascript">
+			$('footer').load('footer.html');
+		</script>
+	</footer><!-- endfooter -->
+	<script type="text/javascript" src="assets/js/cart_prd_list.js"></script>
+</body>
+</html>
