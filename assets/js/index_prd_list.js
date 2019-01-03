@@ -12,7 +12,7 @@ function loadListPrdHeader(idElm, start, end)
 	for (var i = start; i < end; i++)
 	{
 		var prd = productList[i];
-		console.log(prd);
+		/*console.log(prd);*/
 		var html = '<div class="line2">';
 			html += '<div class="text-sp">';
 				html += '<a href="#"><h4>' + prd.name + '</h4></a>';

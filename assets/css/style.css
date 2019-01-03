@@ -3,6 +3,15 @@
     margin: 0px;
 }
 
+.Set {
+    background-color: red;
+    width: 50px;
+    margin-left: 10px;
+    outline: none;
+    color:#fff;
+    font-weight:bold;
+}
+
 .sanphamelt {
     display: flex;
     margin-top: 20px;
