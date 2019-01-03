@@ -1,6 +1,4 @@
 
-
-
 var productList = [
 	{
 		name: 'Est Officia Including Shoes Beautiful',

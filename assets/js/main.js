@@ -27,11 +27,16 @@ function countTotalItem(idx)
 // Đọc toàn bộ sản phẩm đã add to cart lưu trong cookie (string) ra mảng javascript
 function getCartItems()
 {
-  // Đọc giá trị đã lưu trong cookie ra chuỗi (string)
-  var listPrdStr = getCookie(cartProductListCookieName);
-
-  // Nếu có (length > 0) -> (true) thì sẽ chuyển chuỗi trên thành javascript 's array, nếu ko thì mảng trống
-  return listPrdStr.length ? JSON.parse(listPrdStr) : [];
+  var listPrdArr = [];
+  try 
+  {
+    listPrdArr = JSON.parse(listPrdStr);
+  }
+  catch(e)
+  {
+    listPrdArr = [];
+  }
+  return listPrdArr
 }
 
 // Xoa tat ca cac phan tu trong cart co gia tri la 'idx'
