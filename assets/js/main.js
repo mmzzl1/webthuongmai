@@ -1,10 +1,12 @@
 // Them san pham co index = prdIdx (product_list.js)
 function addToCard(prdIdx)
 {
+	console.log(prdIdx);
 	var prd = productList[prdIdx];
 	
 	var cartItems = getCartItems();
 	cartItems.push(prdIdx);
+	console.log(cartItems);
 	setCookie(cartProductListCookieName, JSON.stringify(cartItems));
 
 	updateCart();
@@ -30,13 +32,13 @@ function getCartItems()
   var listPrdArr = [];
   try 
   {
-    listPrdArr = JSON.parse(listPrdStr);
+    listPrdArr = JSON.parse(getCookie(cartProductListCookieName));
   }
   catch(e)
   {
     listPrdArr = [];
   }
-  return listPrdArr
+  return listPrdArr;
 }
 
 // Xoa tat ca cac phan tu trong cart co gia tri la 'idx'
@@ -70,6 +72,7 @@ function setTotalItem(idx)
 function updateCart()
 {
   var cartItems = getCartItems();
+  console.log(cartItems);
 	$('.giohang-num').text(cartItems.length+' item' + ((cartItems.length>1) ? 's':''));
 }
 
