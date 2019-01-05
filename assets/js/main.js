@@ -1,7 +1,7 @@
 // Them san pham co index = prdIdx (product_list.js)
 function addToCard(prdIdx)
 {
-	console.log(prdIdx);
+	console.log(typeof(prdIdx));
 	var prd = productList[prdIdx];
 	
 	var cartItems = getCartItems();
@@ -41,7 +41,7 @@ function getCartItems()
   return listPrdArr;
 }
 
-// Xoa tat ca cac phan tu trong cart co gia tri la 'idx'
+
 function deleteItem(idx)
 {
   var cartItems = getCartItems();
@@ -55,20 +55,20 @@ function deleteItem(idx)
     idxOf = cartItems.indexOf(idx);
   }
   
-  // JSON.stringify : chuyển mảng javascript sang chuỗi (string) để có thể lưu vào cookie
+  
   setCookie(cartProductListCookieName, JSON.stringify(cartItems));
 
   updateCart();
 }
 
-// Set tổng số sản phẩm muốn mua cho 1 sp
+
 function setTotalItem(idx)
 {
   var total = prompt('Nhap so luong:', countTotalItem(idx));
   updateCart();
 }
 
-// Cập nhật lại số lượng sp trong giỏ hàng
+
 function updateCart()
 {
   var cartItems = getCartItems();
@@ -76,7 +76,7 @@ function updateCart()
 	$('.giohang-num').text(cartItems.length+' item' + ((cartItems.length>1) ? 's':''));
 }
 
-// W3 school hân hạnh tài trợ
+
 function setCookie(cname, cvalue, exdays) {
   var d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));

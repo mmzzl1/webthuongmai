@@ -15,6 +15,7 @@
 .sanphamelt {
     display: flex;
     margin-top: 20px;
+    background-color: #fff;
 }
 
 .sanphamelt01 {width: 20%;text-align: center;padding: 20px;}
