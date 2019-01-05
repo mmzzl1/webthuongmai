@@ -2,6 +2,8 @@ $(function(){
 	// Show header productions
 	loadListPrdHeader('#list-prd-1', 0, 2);
 	loadListPrdHeader('#list-prd-2', 2, 4);
+	loadListPrdHeader('#list-prd-3', 4, 6);
+	loadListPrdHeader('#list-prd-4', 6, 8);
 });
 
 function loadListPrdHeader(idElm, start, end)
